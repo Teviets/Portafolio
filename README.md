@@ -71,9 +71,9 @@ https://proyecto-3-6445a.web.app/
 </style>
 ```
 
-## Estructura de indes.js
+## Estructura de index.js
 
-'''
+```
 import './app.css'
 import App from './App.svelte'
 
@@ -82,4 +82,4 @@ const app = new App({
 })
 
 export default app
-'''
+```
