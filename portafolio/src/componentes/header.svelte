@@ -26,7 +26,7 @@
             <h3 style="color: #EAE2B7;">Sebastian Estrada</h3>
         </button>
     </div>
-    <nav data-aos="fade-left">
+    <nav id="navigationTop" data-aos="fade-left">
         <button class="navBtn" on:click={scrollToAcerca}>Acerca de mi</button>
         <button class="navBtn" on:click={scrollToIniciosFront}>Inicios frontend</button>
         <button class="navBtn" on:click={scrollToProyectos}>Proyectos</button>
@@ -99,5 +99,17 @@
     .navBtn:hover::after {
         transition: all 0.3s ease-out;
         transform: skewX(-45deg) scale(1, 1);
+    }
+
+    @media screen and (max-width: 1020px){
+        #navigationTop{
+            display: none;
+        }
+        #btnHome{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 </style>

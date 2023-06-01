@@ -3,6 +3,7 @@
   import Home from './componentes/home.svelte'
   import Acerca from './componentes/acerca.svelte'
   import Inicios from './componentes/inicios.svelte'
+  import Proyectos from './componentes/proyectos.svelte'
   import AOS from 'aos';
   import 'aos/dist/aos.css';
 
@@ -23,7 +24,7 @@
     <Inicios />
   </div>
   <div id="Proyectos" >
-    <!--Componente Proyectos-->
+    <Proyectos/>
   </div>
 </main>
 

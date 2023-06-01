@@ -96,4 +96,38 @@ import Presentacion from '../assets/img/presentacion.jpg'
 #titCont{
     margin-left: 30px;
 }
+
+@media screen and (max-width: 1020px){
+    #componenteAcerca{
+        width: 100%;
+    }
+    #principal{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #texto{
+        width: 100%;
+        text-align: justify;
+    }
+    #miIMG{
+        margin-left: 0px;
+    }
+    #contacto{
+        margin-top: 35px;
+        gap: 35px;
+    }
+    #contactos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #titCont{
+        margin-left: 30px;
+    }
+}
 </style>

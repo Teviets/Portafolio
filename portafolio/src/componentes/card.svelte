@@ -5,7 +5,7 @@
     export let link;
     export let width;
     export let height;
-  
+
     let showDesc = false;
   
     function showDescription() {
@@ -13,7 +13,7 @@
     }
   </script>
   
-  <button id="buttonCard" style="background-image: url({img}); background-size: cover; width: {width}px; height:{height}px;">
+  <button id="buttonCard" style="background-image: url({img}); background-size: cover; width: {width}; height:{height};">
     <a href={link} id="linkCard" on:mouseenter={showDescription} on:mouseleave={showDescription}>
       {#if showDesc}
         <div id="contentCard" data-aos="fade-left">
@@ -53,6 +53,13 @@
         width: 50%;
         height: 100%;
         color: white;
+    }
+
+    @media screen and (max-width: 1020px){
+      #buttonCard{
+        width: 300px;
+        height: 150px;
+      }
     }
   </style>
   
