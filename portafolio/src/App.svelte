@@ -1,17 +1,26 @@
 <script>
   import Header from './componentes/header.svelte'
+  import Home from './componentes/home.svelte'
+  import Acerca from './componentes/acerca.svelte'
+  import Inicios from './componentes/inicios.svelte'
+  import AOS from 'aos';
+  import 'aos/dist/aos.css';
+
+  AOS.init();
 </script>
 
 <main>
-  <Header />
+  <div id="MiHeader">
+    <Header />
+  </div>
   <div id="home" >
-    <!--Componente Home-->
+    <Home />
   </div>
   <div id="Acerca" >
-    <!--Acerca de mi-->
+    <Acerca />
   </div>
   <div id="inicios" >
-    <!--Componente inicios-->
+    <Inicios />
   </div>
   <div id="Proyectos" >
     <!--Componente Proyectos-->
@@ -24,7 +33,19 @@
     width: 100%;
     height: 100%;
   }
+  #MiHeader{
+    position: sticky;
+    top: 0;
+  }
   #home{
-    
+    width: 100%;
+    height: auto;
+  }
+  #Acerca{
+    width: 100%;
+    height: auto;
+    margin-top: 725px;
+    border-top: 2px solid #EAE2B7;
+    border-bottom: 2px solid #EAE2B7;
   }
 </style>

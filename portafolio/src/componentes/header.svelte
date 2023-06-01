@@ -1,19 +1,19 @@
 <script>
     import Logo from '../assets/img/logo.png'
     function scrollToHome() {
-        const scrollTarget = document.getElementById('Home');
+        const scrollTarget = document.getElementById('home');
         scrollTarget.scrollIntoView({ behavior: 'smooth' });
     }
     function scrollToAcerca(){
-        const scrollTarget = document.getElementById('scrollTarget');
+        const scrollTarget = document.getElementById('Acerca');
         scrollTarget.scrollIntoView({ behavior: 'smooth' });
     }
     function scrollToIniciosFront(){
-        const scrollTarget = document.getElementById('scrollTarget');
+        const scrollTarget = document.getElementById('inicios');
         scrollTarget.scrollIntoView({ behavior: 'smooth' });
     }
     function scrollToProyectos(){
-        const scrollTarget = document.getElementById('scrollTarget');
+        const scrollTarget = document.getElementById('Proyectos');
         scrollTarget.scrollIntoView({ behavior: 'smooth' });
     }
 
@@ -21,15 +21,15 @@
 
 <div id="miHeader">
     <div id="btnHome">
-        <button id="identificador" on:click={scrollToHome}>
+        <button id="identificador" on:click={scrollToHome} data-aos="fade-right">
             <img id="miLogoWi"src={Logo} alt="" width="50">
             <h3 style="color: #EAE2B7;">Sebastian Estrada</h3>
         </button>
     </div>
-    <nav>
+    <nav data-aos="fade-left">
         <button class="navBtn" on:click={scrollToAcerca}>Acerca de mi</button>
         <button class="navBtn" on:click={scrollToIniciosFront}>Inicios frontend</button>
-        <button class="navBtn" on:click={scrollToIniciosFront}>Proyectos</button>
+        <button class="navBtn" on:click={scrollToProyectos}>Proyectos</button>
     </nav>
 </div>
 
@@ -39,6 +39,7 @@
         flex-direction: row;
         justify-content: space-between;
         border-bottom: 1px solid #EAE2B7;
+        background-color: #003049;
     }
     #btnHome{
         display: flex;
